@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+   text-align: center;
+   align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #33272a;
+    text-decoration: none;
+}
+
+.current {
+    border-bottom: 4px solid #ff8ba7;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
