@@ -5,7 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Quotes from "./Quotes";
 import Affirmation from "./Affirmations";
-import { Link,NavLink, Switch, Route } from 'react-router-dom';
+import { NavLink, Switch, Route } from 'react-router-dom';
 
 const Navigation = () => (
   <nav>
@@ -65,7 +65,7 @@ const Main = () => (
 function App() {
   return (
     <div className="App">
-      <Link class="logo">Good Vibes</Link>
+      <h1 class="logo">Good Vibes</h1>
       <Navigation />
 
       <Main />
