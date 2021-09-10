@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 class quoteBox extends React.Component {
   render() {
@@ -10,30 +10,30 @@ class quoteBox extends React.Component {
 
     return (
       <div className="quoteBox">
-        <i class="quoteSymbol">  <FontAwesomeIcon icon={faQuoteLeft} /> </i>
-        <div
-          className="fadeIn "
-          key={Math.random()}
-          style={{ color: randomColor }}
-        >
-          <h1 id="quote" class="quoteText">{this.props.quote}</h1>
-          <h5 id="author">
-            - {this.props.author ? this.props.author : "Unknown"}
-          </h5>
+        <div className="container">
+          <i class="quoteSymbol">
+            {" "}
+            <FontAwesomeIcon icon={faQuoteLeft} />{" "}
+          </i>
+          <div
+            className="fadeIn textContainer " css={`margin-right: 1em;`}
+            key={Math.random()}
+            style={{ color: randomColor }}
+          >
+            <h1 id="quote" class="quoteText">
+              {this.props.quote}
+            </h1>
+            <h5 id="author">
+              - {this.props.author ? this.props.author : "Unknown"}
+            </h5>
+          </div>
+
+          <button id="newquote" onClick={this.props.handleClick}>
+            New quote
+          </button>
         </div>
-
-
-
-
-
-        <button
-          id="newquote"
-          onClick={this.props.handleClick}
-        >
-          New quote
-        </button>
+        
       </div>
-
     );
   }
 }

@@ -1,5 +1,6 @@
-div.affirmation{
+.affirmations{
     margin: 0 auto;
+    height:100vh;
 }
 .affirmationsTable {
     margin-left: auto;
