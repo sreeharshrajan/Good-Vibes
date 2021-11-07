@@ -4,11 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 60vh;
 }
 
 .container {
-  width: 90%;
+  width: 500px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px -10px rgb(31 18 53 / 60%);
 }
 
 .quoteText {
@@ -18,8 +23,9 @@
 .quoteSymbol {
   font-size: 2em;
   color: #1f1f1f;
-  text-align: left;
+  text-align: center;
   margin: 40px 0px;
+  padding: 0.6rem;
 }
 
 #author {
@@ -29,6 +35,7 @@
 }
 
 button {
+  margin-top: 3rem;
   position: fixed;
   background-color: rgb(255, 139, 167);
   color: rgb(51, 39, 42);
@@ -43,21 +50,4 @@ button {
 button:hover {
   box-shadow: 0 5px 15px -10px rgb(31 18 53 / 60%);
   color: white;
-}
-
-.fadeIn {
-  opacity: 0;
-  display: block;
-  animation: slidein 1s ease-out forwards;
-}
-
-@keyframes slidein {
-  0% {
-    opacity: 0;
-    /* transform: translateX(25px); */
-  }
-  100% {
-    opacity: 1;
-    /* transform: translateX(0px); */
-  }
 }

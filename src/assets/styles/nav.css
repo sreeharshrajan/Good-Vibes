@@ -8,6 +8,11 @@ nav {
   align-content: center;
 }
 
+nav .logo h1 a {
+  text-decoration: none;
+  color: #ff8ba7;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;

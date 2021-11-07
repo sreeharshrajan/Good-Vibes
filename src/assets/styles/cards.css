@@ -1,21 +1,22 @@
 .cards {
-  max-width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
 }
 
 .cards h2.header {
-  font-size: 40px;
+  font-size: 1.8rem;
   margin: 0 0 30px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #33272a
+  color: #33272a;
 }
 
-.services {
+.cardswrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .content {
@@ -26,15 +27,10 @@
   padding: 20px;
   border: 2px solid black;
   border-radius: 4px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.content .fab {
-  font-size: 70px;
-  margin: 16px 0;
-}
-
-.content>* {
+.content > * {
   flex: 1 1 100%;
 }
 
@@ -57,12 +53,12 @@
 }
 
 .content-2:hover {
-  border-color: #E1306C;
-  background: #E1306C;
+  border-color: #e1306c;
+  background: #e1306c;
 }
 
 .content-2:hover a {
-  color: #E1306C;
+  color: #e1306c;
 }
 
 .content-3:hover {
@@ -75,15 +71,15 @@
 }
 
 .content h2 {
-  font-size: 30px;
+  font-size: 1.38rem;
   margin: 16px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .content p {
-  font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .content a {
@@ -95,7 +91,7 @@
   border: 1px solid black;
   padding: 15px 0;
   border-radius: 25px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .content a:hover {
@@ -103,7 +99,7 @@
 }
 
 @media (max-width: 900px) {
-  .services {
+  .cardswrapper {
     display: flex;
     flex-direction: column;
   }
