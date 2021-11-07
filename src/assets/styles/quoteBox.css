@@ -1,0 +1,63 @@
+.quoteBox {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.quoteText {
+  text-align: center;
+}
+
+.quoteSymbol {
+  font-size: 2em;
+  color: #1f1f1f;
+  text-align: left;
+  margin: 40px 0px;
+}
+
+#author {
+  margin: 20px;
+  font-style: italic;
+  text-align: right;
+}
+
+button {
+  position: fixed;
+  background-color: rgb(255, 139, 167);
+  color: rgb(51, 39, 42);
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 24px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 5px 15px -10px rgb(31 18 53 / 60%);
+  color: white;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    /* transform: translateX(25px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(0px); */
+  }
+}

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background: #faeee7;
+  min-height: 100vh;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5vh;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  color: #33272a;
+}
+
+a:hover {
+  color: #ff8ba7;
+  font-weight: bold;
+}
+
+p {
+  color: #111;
+  font-size: 21px;
+  line-height: 1.41;
+}
+h1 {
+  font-weight: 600;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1.5s ease-in-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

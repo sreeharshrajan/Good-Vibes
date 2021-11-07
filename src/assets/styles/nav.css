@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  width: 100%;
+  padding: 22px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 1rem;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.logo {
+  text-align: center;
+  font-weight: 800;
+  color: #ff8ba7;
+  width: 40%;
+  vertical-align: middle;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #33272a;
+  text-decoration: none;
+}
+
+.current {
+  border-bottom: 2px solid #ff8ba7;
+  font-weight: bold;
+  color: #ff8ba7;
+}
