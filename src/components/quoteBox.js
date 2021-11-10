@@ -16,7 +16,10 @@ class quoteBox extends React.Component {
             <FontAwesomeIcon icon={faQuoteLeft} />{" "}
           </i>
           <div
-            className="fadeIn textContainer " css={`margin-right: 1em;`}
+            className="fadeIn textContainer "
+            css={`
+              margin-right: 1em;
+            `}
             key={Math.random()}
             style={{ color: randomColor }}
           >
@@ -26,13 +29,13 @@ class quoteBox extends React.Component {
             <h5 id="author">
               - {this.props.author ? this.props.author : "Unknown"}
             </h5>
-          </div>
 
-          <button id="newquote" onClick={this.props.handleClick}>
-            New quote
-          </button>
+            <button id="newquote" onClick={this.props.handleClick}>
+              GET ANOTHER QUOTE
+            </button>
+            <div className="ground-line"></div>
+          </div>
         </div>
-        
       </div>
     );
   }
